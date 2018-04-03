@@ -1,0 +1,10 @@
+{"routesList": {
+  "routes":[
+    {"name": "relationPrices",
+    "route":[
+      {"start": "Szczecin", "end": "Stargard", "price":10},
+      {"start": "Szczecin", "end": "Goleniow", "price":8},
+      {"start": "Szczecin", "end": "Gryfino", "price":7}
+    ]}
+  ]
+}}
