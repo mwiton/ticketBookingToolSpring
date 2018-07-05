@@ -11,6 +11,10 @@ public class Place {
     private Long id;
     @Column(name = "name", nullable = false)
     private String name;
+    @Column(name = "city", nullable = false)
+    private String city;
+    @Column(name = "coordinates")
+    private String coordinates;
 
     public Long getId() {
         return id;
@@ -44,8 +48,5 @@ public class Place {
         this.coordinates = coordinates;
     }
 
-    @Column(name = "city", nullable = false)
-    private String city;
-    @Column(name = "coordinates")
-    private String coordinates;
+
 }

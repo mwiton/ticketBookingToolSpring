@@ -1,27 +1,45 @@
 package pl.mwiton.model;
 
+import javax.persistence.*;
+
 /**
  * Created by Mateusz Witoń on 20.02.2018.
  */
 public class RoutePrice {
-    private String start;
-    private String end;
+    @Id
+    @GeneratedValue
+    private int idNum;
+    @ManyToOne
+    @JoinColumn(name = "start_place_id")
+    private Place startPlace;
+    @ManyToOne
+    @JoinColumn(name = "end_place_id")
+    private Place endPlace;
+    @Column (name = "price")
     private double price;
 
-    public String getStart() {
-        return start;
+    public int getIdNum() {
+        return idNum;
     }
 
-    public void setStart(String start) {
-        this.start = start;
+    public void setIdNum(int idNum) {
+        this.idNum = idNum;
     }
 
-    public String getEnd() {
-        return end;
+    public Place getStartPlace() {
+        return startPlace;
     }
 
-    public void setEnd(String end) {
-        this.end = end;
+    public void setStartPlace(Place startPlace) {
+        this.startPlace = startPlace;
+    }
+
+    public Place getEndPlace() {
+        return endPlace;
+    }
+
+    public void setEndPlace(Place endPlace) {
+        this.endPlace = endPlace;
     }
 
     public double getPrice() {
