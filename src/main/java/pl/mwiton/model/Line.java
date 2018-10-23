@@ -4,6 +4,8 @@ import javax.persistence.*;
 import java.time.LocalDateTime;
 import java.util.List;
 
+@Entity
+@Table
 public class Line {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

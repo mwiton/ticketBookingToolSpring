@@ -6,6 +6,9 @@ import java.util.List;
 /**
  * Created by Mateusz Witoń on 08.04.2018.
  */
+
+@Entity
+@Table
 public class TicketTransaction {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

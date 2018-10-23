@@ -7,6 +7,8 @@ import java.time.format.DateTimeFormatter;
 /**
  * Created by Mateusz Witoń on 20.02.2018.
  */
+@Entity
+@Table
 public class Ticket {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

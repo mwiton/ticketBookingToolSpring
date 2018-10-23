@@ -7,6 +7,7 @@ import java.time.LocalDateTime;
  * Created by Mateusz Witoń on 20.02.2018.
  */
 @Entity
+@Table
 public class Route {
     @Id
     @GeneratedValue

@@ -5,6 +5,9 @@ import javax.persistence.*;
 /**
  * Created by Mateusz Witoń on 20.02.2018.
  */
+
+@Entity
+@Table
 public class RoutePrice {
     @Id
     @GeneratedValue

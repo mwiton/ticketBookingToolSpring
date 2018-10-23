@@ -14,16 +14,16 @@ public class DateDiscount implements DiscountObject{
 
     @Override
     public void useDiscount(Ticket ticket) {
-        double price = ticket.getPrice();
+        /*double price = ticket.getPrice();
         double discount = 0;
-        if(ticket.getDateOfBuy().plusWeeks(2).toLocalDate().compareTo(
+        if(ticket.getCreateDate().plusWeeks(2).toLocalDate().compareTo(
                 ticket.getRoute().getStartDate().toLocalDate()) <=0) {
             discount = TWO_WEEK_DISCOUNT;
         }
-        else if(ticket.getDateOfBuy().plusWeeks(1).toLocalDate().compareTo(
+        else if(ticket.getCreateDate().plusWeeks(1).toLocalDate().compareTo(
                 ticket.getRoute().getStartDate().toLocalDate()) <=0) {
             discount = ONE_WEEK_DISCOUNT;
         }
-        ticket.setPrice(price - discount * price);
+        ticket.setPrice(price - discount * price);*/
     }
 }
